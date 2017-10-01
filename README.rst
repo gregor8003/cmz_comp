@@ -2,7 +2,7 @@ cmz_comp
 ========
 
 CMZ (Cottrell, Munro, Zipser) is a trivial image compressor that uses
-autoencoder neural network. Currently it handles geyscale PNG images.
+autoencoder neural network. Currently it handles grayscale PNG images.
 
 Neural network is built in Keras with tensorflow backend.
 
@@ -59,6 +59,8 @@ Usage
                          [--batch-size NN_AE_TRAIN_BATCH_SIZE] [--noshuffle]
                          [--verbosity {0,1,2}]
                          [--nn-encoder-activation NN_ENCODER_ACTIVATION]
+                         [--dump-history-path DUMP_HISTORY_PATH]
+                         [--dump-history-plots]
                          input_file_path output_file_path
     
     Compress grayscale image.
@@ -93,6 +95,9 @@ Usage
                             verbosity of training of autoencoder network
       --nn-encoder-activation NN_ENCODER_ACTIVATION
                             activation function of encoder network
+      --dump-history-path DUMP_HISTORY_PATH
+                            dump training history to specified file
+      --dump-history-plots  produce training history plots
 
 .. code-block:: bash
 
