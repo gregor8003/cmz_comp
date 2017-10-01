@@ -1,0 +1,4 @@
+include LICENSE.txt
+include README.rst
+include environment.yml
+include setup.py

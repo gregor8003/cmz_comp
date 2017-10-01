@@ -1,0 +1,12 @@
+name: cmz_comp
+channels:
+- conda-forge
+- defaults
+dependencies:
+- python=3.6.*
+- Pillow
+- keras
+- tensorflow
+- numpy=1.12.*
+- scipy=0.19.*
+prefix: cmz_comp
